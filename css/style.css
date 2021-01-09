@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    align-items: center;
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+.logo {
+    padding: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.menu ul{
+  list-style: none;  
+  display: flex;
+}
+
+.menu ul a{
+   text-decoration: none;
+   color: black;
+   display: block;
+   padding: 10px;
+   letter-spacing: 2px;
+}
+
+.menu ul a:hover{
+    background: rgb(219, 218, 218);
+ }
+.logo:hover {
+    background: rgb(219, 218, 218);
+}
+
+.cover{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.cover img {
+    width: 100%;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.projects .items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.projects .house {
+   position: relative;
+   margin: 10px; 
+   flex-basis: 20%;
+   flex-grow: 1;
+}
+
+.projects .house img{
+    width: 100%;
+ }
+
+.projects .house .label{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 10px;
+}
+
+.items .role img{
+  width: 100%;
+  filter: grayscale(70%);
+}
+
+.position {
+    font-size: 14px;
+    color: gray;
+    margin: 15px 0;
+}
+.role button {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    margin: 10px 0;
+}
+.role .name {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.role button:hover{
+    background: rgb(170, 170, 170);
+    cursor: pointer;
+}
+
+.about .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .items .role{
+    margin: 5px;
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(196, 196, 196);
+    margin: 5px 0;
+}
+
+.form p {
+    margin: 10px 0;
+}
+
+.form button {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+.map img {
+    width: 100%;
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 1000 */
+@media (max-width: 1000px){
+    .projects .house {
+        flex-basis: 40%;
+        flex-grow: 1;
+     }
+     .about .items .role{
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+     
+}
+
+/* 600 */
+@media (max-width: 600px){
+    .projects .house {
+        flex-basis: 90%;
+        flex-grow: 1;
+     }
+     .about .items .role{
+        flex-basis: 90%;
+        flex-grow: 1;
+    }  
+    .menu {
+        display: none;
+    } 
+}
